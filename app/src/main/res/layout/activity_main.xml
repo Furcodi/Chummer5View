@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        tools:showIn="@layout/activity_main"
+        tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView android:id="@+id/main_ScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical">
+
+            <GridLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+
+                    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:useDefaultMargins="true"
+                    android:alignmentMode="alignBounds"
+                    android:columnOrderPreserved="true"
+
+                    android:columnCount="7"
+            >
+
+                <TextView
+                        android:text="@string/allgemein_koerper"
+                        android:textStyle="bold"
+                        android:layout_columnSpan="2"/>
+                <Space
+                        android:layout_row="0"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="0"
+
+                        android:layout_gravity="fill"
+                />
+                <TextView
+                        android:id="@+id/zustandKorp"
+                        android:text="@string/zustand_koerper_txt"
+                        android:textStyle="bold"
+                        android:layout_columnSpan="3"/>
+
+                <TextView
+                        android:id="@+id/text_KON"
+                        android:text="@string/attribute_KON"/>
+                <TextView
+                        android:id="@+id/KON_Wert"
+                        android:text="-"
+                        android:layout_marginLeft="15dp"/>
+                <Space
+                        android:layout_row="1"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="0"
+                        android:layout_width="40dp"
+                        android:layout_gravity="fill"
+                />
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox1"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox2"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox3"/>
+
+                <TextView
+                        android:id="@+id/text_GES"
+                        android:text="@string/attribute_GES"/>
+                <TextView
+                        android:id="@+id/GES_Wert"
+                        android:text="-"
+                        android:layout_marginLeft="15dp"/>
+                <Space
+                        android:layout_row="2"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="0"
+                        android:layout_gravity="fill"
+                />
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox4"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox5"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox6"/>
+
+                <TextView
+                        android:id="@+id/text_REA"
+                        android:text="@string/attribute_REA"/>
+                <TextView
+                        android:id="@+id/REA_Wert"
+                        android:text="-"
+                        android:layout_marginLeft="15dp"/>
+                <Space
+                        android:layout_row="3"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="0"
+                        android:layout_gravity="fill"
+                />
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox7"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox8"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox9"/>
+
+                <TextView
+                        android:id="@+id/text_STR"
+                        android:text="@string/attribute_STR"/>
+                <TextView
+                        android:id="@+id/STR_Wert"
+                        android:text="-"
+                        android:layout_marginLeft="15dp"/>
+                <Space
+                        android:layout_row="4"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="0"
+                        android:layout_gravity="fill"
+                />
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox10"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox11"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox12"/>
+
+                <Space
+                        android:layout_row="5"
+                        android:layout_column="0"
+                        android:layout_columnSpan="4"
+                        android:layout_rowSpan="0"
+                        android:layout_gravity="fill"
+                />
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox13"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox14"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox15"/>
+
+                <Space
+                        android:layout_row="6"
+                        android:layout_column="0"
+                        android:layout_columnSpan="4"
+                        android:layout_rowSpan="0"
+                        android:layout_gravity="fill"
+                />
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox16"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox17"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/korpCheckBox18"/>
+
+
+                <TextView
+                        android:text="@string/allgemein_geistig"
+                        android:textStyle="bold"
+                        android:layout_span="2"/>
+
+                <Space
+                        android:layout_row="7"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="0"
+
+                        android:layout_gravity="fill"
+                />
+                <TextView
+                        android:id="@+id/zustandGeist"
+                        android:text="@string/zustand_geist_txt"
+                        android:textStyle="bold"
+                        android:layout_columnSpan="3"/>
+
+                <TextView
+                        android:id="@+id/text_CHA"
+                        android:text="@string/attribute_CHA"/>
+                <TextView
+                        android:id="@+id/CHA_Wert"
+                        android:text="-"
+                        android:layout_marginLeft="15dp"/>
+                <Space
+                        android:layout_row="8"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="0"
+                        android:layout_width="40dp"
+                        android:layout_gravity="fill"
+                />
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/geistCheckBox1"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/geistCheckBox2"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/geistCheckBox3"/>
+
+                <TextView
+                        android:id="@+id/text_INT"
+                        android:text="@string/attribute_INT"/>
+                <TextView
+                        android:id="@+id/INT_Wert"
+                        android:text="-"
+                        android:layout_marginLeft="15dp"/>
+                <Space
+                        android:layout_row="9"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="0"
+                        android:layout_width="40dp"
+                        android:layout_gravity="fill"
+                />
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/geistCheckBox4"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/geistCheckBox5"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/geistCheckBox6"/>
+
+                <TextView
+                        android:id="@+id/text_LOG"
+                        android:text="@string/attribute_LOG"/>
+                <TextView
+                        android:id="@+id/LOG_Wert"
+                        android:text="-"
+                        android:layout_marginLeft="15dp"/>
+                <Space
+                        android:layout_row="10"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="0"
+                        android:layout_width="40dp"
+                        android:layout_gravity="fill"
+                />
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/geistCheckBox7"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/geistCheckBox8"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/geistCheckBox9"/>
+
+                <TextView
+                        android:id="@+id/text_WIL"
+                        android:text="@string/attribute_WIL"/>
+                <TextView
+                        android:id="@+id/WIL_Wert"
+                        android:text="-"
+                        android:layout_marginLeft="15dp"/>
+                <Space
+                        android:layout_row="11"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="0"
+                        android:layout_width="40dp"
+                        android:layout_gravity="fill"
+                />
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/geistCheckBox10"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/geistCheckBox11"/>
+                <CheckBox
+                        android:text=""
+                        android:scaleX="2.00"
+                        android:scaleY="2.00"
+                        android:id="@+id/geistCheckBox12"/>
+
+                <TextView
+                        android:text="@string/allgemein_spezial"
+                        android:textStyle="bold"
+                        android:layout_span="2"/>
+
+                <Space
+                        android:layout_row="12"
+                        android:layout_column="3"
+                        android:layout_columnSpan="4"
+                        android:layout_rowSpan="0"
+
+                        android:layout_gravity="fill"
+                />
+
+                <TextView
+                        android:id="@+id/text_EDG"
+                        android:text="@string/attribute_EDG"/>
+                <TextView
+                        android:id="@+id/EDG_Wert"
+                        android:text="-"
+                        android:layout_marginLeft="15dp"/>
+                <Space
+                        android:layout_row="13"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="0"
+                        android:layout_width="40dp"
+                        android:layout_gravity="fill"
+                />
+                <Button
+                        android:text="-"
+                        android:id="@+id/EDGWertminus"
+                        android:layout_gravity="center"
+                        android:layout_height="34dp"
+                        android:layout_width="30dp"
+                        android:onClick="onClickBtnEdgeMinus"/>
+                <TextView
+                        android:id="@+id/txt_akt_EDG"
+                        android:layout_gravity="center"
+                        android:text="-"/>
+                <Button
+                        android:text="+"
+                        android:id="@+id/EDGWertplus"
+                        android:layout_height="34dp"
+                        android:layout_width="30dp"
+                        android:onClick="onClickBtnEdgePlus"/>
+
+                <TextView
+                        android:id="@+id/text_MAG"
+                        android:text="@string/attribute_MAG"/>
+                <TextView
+                        android:id="@+id/MAG_Wert"
+                        android:text="-"
+                        android:layout_marginLeft="15dp"/>
+                <Space
+                        android:layout_row="14"
+                        android:layout_column="3"
+                        android:layout_columnSpan="4"
+                        android:layout_rowSpan="0"
+                        android:layout_width="40dp"
+                        android:layout_gravity="fill"
+                />
+
+                <TextView
+                        android:text="@string/allgemein_vorteile"
+                        android:textStyle="bold"
+                        android:layout_span="2"/>
+
+                <Space
+                        android:layout_row="15"
+                        android:layout_column="3"
+                        android:layout_columnSpan="4"
+                        android:layout_rowSpan="0"
+                        android:layout_gravity="fill"
+                />
+
+                <TextView
+                        android:id="@+id/vorteile"
+                        android:text="-"
+                        android:layout_span="7"
+                        android:layout_columnSpan="7"
+                        android:layout_marginLeft="5dp"/>
+                <Space
+                        android:layout_row="16"
+                        android:layout_column="6"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="0"
+                        android:layout_gravity="fill"
+                />
+
+
+                <TextView
+                        android:id="@+id/text_sub"/>
+
+            </GridLayout>
+
+
+<!--
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" tools:layout_editor_absoluteY="16dp"
+                    tools:layout_editor_absoluteX="16dp">
+
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:text="@string/allgemein_koerper"
+                            android:textStyle="bold"
+                            android:layout_span="2"/>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dip">
+                    <TextView
+                            android:id="@+id/text_KON"
+                            android:text="@string/attribute_KON"/>
+                    <TextView
+                            android:id="@+id/KON_Wert"
+                            android:text="-"
+                            android:layout_marginLeft="15dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:id="@+id/text_GES"
+                            android:text="@string/attribute_GES"/>
+                    <TextView
+                            android:id="@+id/GES_Wert"
+                            android:text="-"
+                            android:layout_marginLeft="15dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:id="@+id/text_REA"
+                            android:text="@string/attribute_REA"/>
+                    <TextView
+                            android:id="@+id/REA_Wert"
+                            android:text="-"
+                            android:layout_marginLeft="15dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:id="@+id/text_STR"
+                            android:text="@string/attribute_STR"/>
+                    <TextView
+                            android:id="@+id/STR_Wert"
+                            android:text="-"
+                            android:layout_marginLeft="15dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:text="@string/allgemein_geistig"
+                            android:textStyle="bold"
+                            android:layout_span="2"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:id="@+id/text_CHA"
+                            android:text="@string/attribute_CHA"/>
+                    <TextView
+                            android:id="@+id/CHA_Wert"
+                            android:text="-"
+                            android:layout_marginLeft="15dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:id="@+id/text_INT"
+                            android:text="@string/attribute_INT"/>
+                    <TextView
+                            android:id="@+id/INT_Wert"
+                            android:text="-"
+                            android:layout_marginLeft="15dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:id="@+id/text_LOG"
+                            android:text="@string/attribute_LOG"/>
+                    <TextView
+                            android:id="@+id/LOG_Wert"
+                            android:text="-"
+                            android:layout_marginLeft="15dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:id="@+id/text_WIL"
+                            android:text="@string/attribute_WIL"/>
+                    <TextView
+                            android:id="@+id/WIL_Wert"
+                            android:text="-"
+                            android:layout_marginLeft="15dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:text="@string/allgemein_spezial"
+                            android:textStyle="bold"
+                            android:layout_span="2"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:id="@+id/text_EDG"
+                            android:text="@string/attribute_EDG"/>
+                    <TextView
+                            android:id="@+id/EDG_Wert"
+                            android:text="-"
+                            android:layout_marginLeft="15dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:id="@+id/text_MAG"
+                            android:text="@string/attribute_MAG"/>
+                    <TextView
+                            android:id="@+id/MAG_Wert"
+                            android:text="-"
+                            android:layout_marginLeft="15dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:text="@string/allgemein_vorteile"
+                            android:textStyle="bold"
+                            android:layout_span="2"/>
+
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dip">
+                    <TextView
+                            android:id="@+id/vorteile"
+                            android:text="-"
+                            android:layout_span="2"
+                            android:layout_marginLeft="5dp"/>
+                </TableRow>
+
+            </TableLayout>
+-->
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

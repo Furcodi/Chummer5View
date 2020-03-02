@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Chummer5View</string>
+    <string name="action_allgemein">Allgemein</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_attributes">Attribute</string>
+    <string name="action_skills">Fertigkeiten</string>
+    <string name="action_fight">Kampf</string>
+    <string name="action_gear">Ausrüstung</string>
+    <string name="action_cyberware">Cyberware</string>
+    <string name="action_magic">Magie</string>
+    <string name="action_vehicle">Fahrzeuge</string>
+    <string name="settings_seite_text">Hier sind die Settings</string>
+    <string name="select_file_text">folgende Dateien wurden gefunden.\nBitte auswählen:</string>
+
+
+
+    <string name="allgemein_koerper">Körperliche Attribute</string>
+    <string name="allgemein_geistig">Geistige Attribute</string>
+    <string name="allgemein_spezial">Spezialattribute</string>
+    <string name="allgemein_vorteile">Vorteile</string>
+    <string name="zustand_koerper_txt">Zustandsmonitor</string>
+    <string name="zustand_geist_txt">Zustandsmonitor</string>
+
+
+    <string name="attribute_KON">Konstitution</string>
+    <string name="attribute_GES">Geschicklichkeit</string>
+    <string name="attribute_REA">Reaktion</string>
+    <string name="attribute_STR">Stärke</string>
+    <string name="attribute_CHA">Charisma</string>
+    <string name="attribute_INT">Intuition</string>
+    <string name="attribute_LOG">Logik</string>
+    <string name="attribute_WIL">Willenskraft</string>
+    <string name="attribute_EDG">Edge</string>
+    <string name="attribute_MAG">Magie</string>
+
+    <string name="waffelaus">Waffe wählen</string>
+
+    <string name="PfadZurDatei_SharedPref">PfadZurDatei_SharedPref</string>
+
+</resources>
